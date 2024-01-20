@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+  box-sizing: border-box;
+}
+
+.si-dropdown-contnr {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 45px;
+  margin-right: 10px;
+}
+
+.si-dropdown-header {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.si-flexBox {
+  display: flex;
+}
+
+.section__container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.popular__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 3rem;
+}
+
+.popular__card {
+  transition: transform 0.3s ease;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+}
+
+.active {
+  display: flex;
+}
+
+.hotel-image {
+  height: 100%;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  object-fit: cover;
+  border-bottom: 5px solid #fcaf17;
+}
+
+.popular_content {
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 30px;
+  text-align: center;
+  height: 47px;
+  object-fit: cover;
+}
+
+img .icon {
+  margin-left: 25px;
+}
+
+.shift-right {
+  padding-left: 10px;
+}
+
+.flip-box {
+  width: 230px;
+  height: 310px;
+  perspective: 1000px;
+  margin: 20px;
+}
+
+.flip-box-inner {
+  position: relative;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front,
+.flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  color: black;
+}
+
+.back-content {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 19px;
+}
+
+.flip-box-back {
+  background: linear-gradient(180deg, #ee2c30 0, #7d141e 100%);
+  color: white;
+  height: 100%;
+  transform: rotateY(180deg);
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-bottom: 5px solid #fcaf17;
+}
+
+.run {
+  align-self: flex-start;
+  padding: 4px;
+}
+
+.score {
+  font-size: 30px;
+  text-align: left;
+}
+
+.my-button {
+  padding: 8px 20px;
+  background: none;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.my-button:hover {
+  color: white;
+}
+
+a {
+  color: #2c5060;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.name {
+  border-left: 1px solid black;
+  padding-left: 20px;
+}
+
+@media (max-width: 600px) {
+  .popular__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+  }
+
+  .popular__card {
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .popular_content {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .popular__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .popular__card {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* coach session */
+.coach-heading {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ricky-image {
+  width: 230px;
+  height: 310px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  object-fit: cover;
+  border-bottom: 5px solid #fcaf17;
+  padding-top: 20px;
+}
+
+.coach-name {
+  padding-top: 18px;
+}
+
+.name-content {
+  padding-left: 17px;
+}
